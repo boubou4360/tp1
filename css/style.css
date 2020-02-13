@@ -363,6 +363,7 @@ Voici un exemple
   width: 650px;
   text-align: center;
   overflow: hidden;
+  margin: 10em auto;
 }
 
 .slides {
@@ -1257,6 +1258,36 @@ desktop : 4 colonnes
 
 .gallery-item:last-of-type {
   padding-right: 0;
+}
+
+/*-------------------------------------------------------------- */
+/* --------------------------------------------------------------
+# Animation
+---------------------------------------------------------------- */
+@-webkit-keyframes animEntete {
+  from {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+@keyframes animEntete {
+  from {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+.animEntete {
+  -webkit-animation: animEntete 1s;
+          animation: animEntete 1s;
 }
 
 /*-------------------------------------------------------------- */
