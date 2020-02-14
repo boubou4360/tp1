@@ -1,12 +1,15 @@
 @keyframes animEntete{
     from{
         transform : translateX(1000px);
+        
     }
     to{
         transform : translateX(0px);
+       
     }
 }
 
 .animEntete {
     animation: animEntete 1s;
+    
 }
