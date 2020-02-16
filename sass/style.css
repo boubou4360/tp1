@@ -1290,5 +1290,17 @@ desktop : 4 colonnes
           animation: animEntete 1s;
 }
 
+#Fdepart {
+  font-size: 30px;
+  width: 300px;
+  background-color: red;
+  position: absolute;
+  margin: 0 40%;
+  top: 0;
+  left: 0;
+  -webkit-animation: fenetre 3s linear forwards;
+          animation: fenetre 3s linear forwards;
+}
+
 /*-------------------------------------------------------------- */
 /*# sourceMappingURL=style.css.map */

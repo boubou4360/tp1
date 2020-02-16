@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/objetAnimer.class.js"></script>
+    
     <title>Exercie #1</title>
     <style>
         * {
@@ -35,12 +37,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One|Roboto&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
     <header>
-        <section class="global">
-            <h1 class="animEntete">Les sept merveilles du monde moderne</h1>
+        <section class="global " >
+            <h1 class="animEntete" >Rainbow Six Siege</h1>
          
         </section>
     </header>
@@ -49,7 +52,7 @@
             <input id="checkMenu" type="checkbox">
             <label id="btnMenu" for="checkMenu">&#9776;</label>
             <ul class='global'>
-                <li><a href="">Lorem</a></li>
+                <li><a href="" >Lorem</a></li>
                 <li><a href="">Vero</a></li>
                 <li><a href="">Aperiam</a></li>
                 <li><a href="">Reprehenderit</a></li>
@@ -59,16 +62,17 @@
             </ul>
             <div id='recherche' class='global'>
                 <input id="chkRecherche" type="checkbox">
-                <input type='text' id='txtRecherche' placeholder='Recherche'> 
+                <input type='text' id='txtRecherche' placeholder='Recherche' onclick="allo()"> 
                 <label id="btnRecherche" for="chkRecherche"></label>
             </div>
     </nav>
     <main>
         <section class="global">
        
-            <h1>Bouton Sass avec Mixin</h1>
+            <h1 class="animBreathe">Bouton Sass avec Mixin</h1>
             <p>Utilisez SASS pour détecter vos couleurs d'arrière-plan et d'autres styles et appliquez-les à vos boutons pour une
             cohérence globale survole et états actifs.</p>
+            <div id="Fdepart">Bonjour, Bienvenue sur un site de quiz ou vous aurez 5 questions autour du monde du Hockey à répondre       <p font-size="10px">cliquez pour enlever</p></div>
 
             <div class="grid-container">
                     <div class="grid-item"><h1>Attaquant</h1></div>
@@ -191,7 +195,7 @@
                 <div class="grid-item nomOp">Kali</div>  
                 <div class="grid-item logoOp"><img src="img/atk/Kali.png" alt="glaz" height="50" width="50"></div>
                 <div class="grid-item nomOp">Wamai</div>  
-                <div class="grid-item logoOp"><img src="img/def/wamai.png" alt="glaz" height="50" width="50"></div>
+                <div class="grid-item logoOp"><img src="img/def/wamai.png" alt="glaz" height="50" width="50" class="livethumbnail"></div>
 
             </div>
             <!--
@@ -209,7 +213,7 @@
 
         <div class="slider">
 
-            <a href="#slide-1">1</a>
+            <a href="#slide-1" >1</a>
             <a href="#slide-2">2</a>
             <a href="#slide-3">3</a>
             <a href="#slide-4">4</a>
@@ -228,7 +232,7 @@
             <div class="slides">
                 <div id="slide-1">
                     
-                    <img src="img/operation/blackice.jpg" alt="Smiley face">
+                    <img src="img/operation/blackice.jpg" alt="Smiley face" class="livethumbnail">
                 </div>
                 <div id="slide-2">
                     <img src="img/operation/dustline.jpg" alt="Smiley face">
@@ -273,7 +277,7 @@
                         <img src="img/operation/emberrise.jpg" alt="Smiley face">
                 </div>
                 <div id="slide-16">
-                        <img src="img/operation/shiftingtides.png" alt="Smiley face">
+                        <img src="img/operation/shiftingtides.png" alt="Smiley face" >
                 </div>
             </div>
         </div>
@@ -324,5 +328,6 @@
             }
         })
     })
+    
 </script>
 </html>
