@@ -9,7 +9,12 @@
     }
 }
 .animationSection {
-    animation: animSection 1s forwards;
+    animation: animSection 3s forwards;
+    position:absolute;
+        background-color:black;
+        z-index:999;
+        width:100vw;
+        height:100vh;
 }
 
 // .imgLogo{

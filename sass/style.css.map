@@ -13,6 +13,7 @@
         "_pied-page.scss",
         "_bouton.scss",
         "_galerie.scss",
+        "_typography.scss",
         "_anim_entete.scss"
     ],
     "names": [],

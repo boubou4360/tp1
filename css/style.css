@@ -20,6 +20,14 @@ License: GNU General Public License v2 or later
 ----------------------------------------------------------------
 # Variables
 --------------------------------------------------------------*/
+/* --------------------------------------------------------------
+# Typo
+---------------------------------------------------------------- */
+body {
+  font-size: 500px;
+}
+
+/*-------------------------------------------------------------- */
 /* ------------------------------------------------------------
 # Extend
 -------------------------------------------------------------- */
@@ -316,6 +324,7 @@ Voici un exemple
   display: grid;
   -ms-grid-columns: auto auto auto auto auto auto auto auto;
       grid-template-columns: auto auto auto auto auto auto auto auto;
+  background-color: #2196F3;
   margin: 0 auto;
 }
 
@@ -361,12 +370,13 @@ Voici un exemple
 .slider {
   width: 650px;
   text-align: center;
-  background-color: red;
   overflow: hidden;
   margin: 10em auto;
 }
 
 .slides {
+  width: 650px;
+  height: 366px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -483,22 +493,28 @@ img {
 }
 
 @media screen and (max-width: 600px) {
+  .slider > a {
+    width: 5.5rem;
+  }
+  .slides > div {
+    width: 400px;
+    height: 215px;
+  }
+  .slides {
+    width: 400px;
+    height: 225px;
+  }
+  .slider {
+    width: 450px;
+    height: 400px;
+    margin-bottom: 20px;
+  }
   .grid-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto auto auto auto;
-        grid-template-columns: auto auto auto auto;
-    max-width: 10em;
-    margin: 0 auto;
-  }
-  .logoOp {
-    max-width: 6em;
-    max-height: 6em;
-  }
-  .nomOp {
-    max-width: 5em;
-    max-height: 3em;
-    font-size: 20px;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    background-color: #2196F3;
   }
   .grid-item:nth-child(1) {
     -ms-grid-row: 1;
@@ -1315,8 +1331,13 @@ desktop : 4 colonnes
 }
 
 .animationSection {
-  -webkit-animation: animSection 1s forwards;
-          animation: animSection 1s forwards;
+  -webkit-animation: animSection 3s forwards;
+          animation: animSection 3s forwards;
+  position: absolute;
+  background-color: black;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
 }
 
 /*-------------------------------------------------------------- */
