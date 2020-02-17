@@ -1,7 +1,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto;
-    background-color: #2196F3;
+
     //padding: 10px;
     
     margin:0 auto;
@@ -130,3 +130,29 @@
           .slider > a:focus {
           background: #000;
           }
+
+
+
+          @media screen and (max-width: 600px) {
+            .grid-container {
+              display: grid;
+              grid-template-columns: auto auto auto auto;
+              
+            
+              //padding: 10px;
+              
+              margin:0 auto;
+            }
+           
+            .logoOp{
+              max-width:10em;
+              max-height:10em;
+            }
+            .grid-item:nth-child(1){
+                grid-area:1/1/1/span 4;
+            }
+            .grid-item:nth-child(2){
+              grid-area:1/5/2/span 4;
+              } 
+                
+        }

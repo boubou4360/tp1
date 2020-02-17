@@ -316,7 +316,6 @@ Voici un exemple
   display: grid;
   -ms-grid-columns: auto auto auto auto auto auto auto auto;
       grid-template-columns: auto auto auto auto auto auto auto auto;
-  background-color: #2196F3;
   margin: 0 auto;
 }
 
@@ -481,6 +480,33 @@ img {
 
 .slider > a:focus {
   background: #000;
+}
+
+@media screen and (max-width: 600px) {
+  .grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+    margin: 0 auto;
+  }
+  .logoOp {
+    max-width: 10em;
+    max-height: 10em;
+  }
+  .grid-item:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: 1/1/1/span 4;
+  }
+  .grid-item:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 4;
+    grid-area: 1/5/2/span 4;
+  }
 }
 
 /*-------------------------------------------------------------- */
@@ -1267,33 +1293,24 @@ desktop : 4 colonnes
 ---------------------------------------------------------------- */
 @-webkit-keyframes animSection {
   from {
-    -webkit-transform: translateX(1000px);
-            transform: translateX(1000px);
+    opacity: 1;
   }
   to {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    opacity: 0;
   }
 }
 @keyframes animSection {
   from {
-    -webkit-transform: translateX(1000px);
-            transform: translateX(1000px);
+    opacity: 1;
   }
   to {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    opacity: 0;
   }
 }
 
-.animationSection {
-  -webkit-animation: animSection 1s;
-          animation: animSection 1s;
-  position: fixed;
-  background-color: blue;
-  z-index: 999;
-  width: 100%;
-  height: 100%;
+.imgLogo {
+  height: 50%;
+  width: 50%;
 }
 
 #Fdepart {

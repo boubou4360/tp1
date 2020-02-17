@@ -1,22 +1,25 @@
 @keyframes animSection{
     from{
-        transform : translateX(1000px);
+        opacity: 1;
         
     }
     to{
-        transform : translateX(0px);
+        opacity:0;
        
     }
 }
-
-.animationSection {
-    animation: animSection 1s;
-    position:fixed;
-    background-color:blue;
-    z-index:999;
-    width:100%;
-    height:100%;
+.imgLogo{
+    height: 50%;
+    width:50%
 }
+// .animationSection {
+//     animation: animSection 1s;
+//     position:absolute;
+//     background-color:black;
+//     z-index:999;
+//     width:100vw;
+//     height:100vh;
+// }
 
 
 #Fdepart{
