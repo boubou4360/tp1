@@ -488,11 +488,17 @@ img {
     display: grid;
     -ms-grid-columns: auto auto auto auto;
         grid-template-columns: auto auto auto auto;
+    max-width: 10em;
     margin: 0 auto;
   }
   .logoOp {
-    max-width: 10em;
-    max-height: 10em;
+    max-width: 6em;
+    max-height: 6em;
+  }
+  .nomOp {
+    max-width: 5em;
+    max-height: 3em;
+    font-size: 20px;
   }
   .grid-item:nth-child(1) {
     -ms-grid-row: 1;
@@ -1308,21 +1314,9 @@ desktop : 4 colonnes
   }
 }
 
-.imgLogo {
-  height: 50%;
-  width: 50%;
-}
-
-#Fdepart {
-  font-size: 30px;
-  width: 300px;
-  background-color: red;
-  position: absolute;
-  margin: 0 40%;
-  top: 0;
-  left: 0;
-  -webkit-animation: fenetre 3s linear forwards;
-          animation: fenetre 3s linear forwards;
+.animationSection {
+  -webkit-animation: animSection 1s forwards;
+          animation: animSection 1s forwards;
 }
 
 /*-------------------------------------------------------------- */

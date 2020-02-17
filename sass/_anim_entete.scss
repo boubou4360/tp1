@@ -8,12 +8,19 @@
        
     }
 }
-.imgLogo{
-    height: 50%;
-    width:50%
+.animationSection {
+    animation: animSection 1s forwards;
 }
+
+// .imgLogo{
+//     height: 50%;
+//     width:50%
+// }
+
+
 // .animationSection {
-//     animation: animSection 1s;
+//     animation: animSection 1s forwards;
+    
 //     position:absolute;
 //     background-color:black;
 //     z-index:999;
@@ -22,18 +29,7 @@
 // }
 
 
-#Fdepart{
-    font-size: 30px;
-    width: 300px;
-    background-color: red;
-    position: absolute;
-    margin: 0 40%;
-    top: 0;
-    left: 0;
-    animation: fenetre 3s linear forwards;
-    
-  
-  }
+
 
 
 
