@@ -24,7 +24,23 @@ License: GNU General Public License v2 or later
 # Typo
 ---------------------------------------------------------------- */
 body {
-  font-size: 500px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.grid-item {
+  font-size: 10px;
+}
+
+.nomOp {
+  font-size: 20px;
+}
+
+.nomOp h1 {
+  font-size: 1.5rem;
+}
+
+.slides > div {
+  font-size: 100px;
 }
 
 /*-------------------------------------------------------------- */
@@ -332,7 +348,6 @@ Voici un exemple
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   /*padding: 20px;*/
-  font-size: 10px;
   text-align: center;
 }
 
@@ -359,11 +374,9 @@ Voici un exemple
 .nomOp {
   width: 7em;
   height: 5em;
-  font-size: 20px;
 }
 
 .nomOp h1 {
-  font-size: 1.5rem;
   font-style: bold;
 }
 
@@ -432,7 +445,6 @@ Voici un exemple
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 100px;
 }
 
 .slides > div:target {
@@ -569,7 +581,6 @@ header h2 {
 body {
   width: 100vw;
   min-height: 100vh;
-  font-family: 'Roboto', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -9,8 +9,7 @@
 #chkRecherche:checked~#btnRecherche {
     &:after {
         content : "X";
-        font-size: 1.3em;
-        font-weight: bolder;
+        
         padding : 12px;
         color : #fff;
     }
@@ -101,7 +100,7 @@ l'état checked est testé par un le sélecteur suivant:
     z-index : 1;
     display : block;
     color: #fff;
-    font-size: 2em;
+ 
     transform-origin: 50% 60%;
     user-select: none;
     position : absolute;
