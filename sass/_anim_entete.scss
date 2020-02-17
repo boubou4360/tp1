@@ -1,4 +1,4 @@
-@keyframes animEntete{
+@keyframes animSection{
     from{
         transform : translateX(1000px);
         
@@ -9,9 +9,13 @@
     }
 }
 
-.animEntete {
-    animation: animEntete 1s;
-    
+.animationSection {
+    animation: animSection 1s;
+    position:fixed;
+    background-color:blue;
+    z-index:999;
+    width:100%;
+    height:100%;
 }
 
 

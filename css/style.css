@@ -362,6 +362,7 @@ Voici un exemple
 .slider {
   width: 650px;
   text-align: center;
+  background-color: red;
   overflow: hidden;
   margin: 10em auto;
 }
@@ -1264,7 +1265,7 @@ desktop : 4 colonnes
 /* --------------------------------------------------------------
 # Animation
 ---------------------------------------------------------------- */
-@-webkit-keyframes animEntete {
+@-webkit-keyframes animSection {
   from {
     -webkit-transform: translateX(1000px);
             transform: translateX(1000px);
@@ -1274,7 +1275,7 @@ desktop : 4 colonnes
             transform: translateX(0px);
   }
 }
-@keyframes animEntete {
+@keyframes animSection {
   from {
     -webkit-transform: translateX(1000px);
             transform: translateX(1000px);
@@ -1285,9 +1286,26 @@ desktop : 4 colonnes
   }
 }
 
-.animEntete {
-  -webkit-animation: animEntete 1s;
-          animation: animEntete 1s;
+.animationSection {
+  -webkit-animation: animSection 1s;
+          animation: animSection 1s;
+  position: fixed;
+  background-color: blue;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+}
+
+#Fdepart {
+  font-size: 30px;
+  width: 300px;
+  background-color: red;
+  position: absolute;
+  margin: 0 40%;
+  top: 0;
+  left: 0;
+  -webkit-animation: fenetre 3s linear forwards;
+          animation: fenetre 3s linear forwards;
 }
 
 /*-------------------------------------------------------------- */

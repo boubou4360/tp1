@@ -14,12 +14,12 @@
         }
         
         
-        /* Don't need button navigation */
+        /* Don't need button navigation 
         @supports (scroll-snap-type) {
         .slider > a {
         display: none;
         }
-        }
+        }*/
         /*
         html, body {
         height: 100%;
@@ -41,6 +41,7 @@
 </head>
 
 <body>
+    <div class="animationSection"></div>
     <header>
         <section class="global " >
             <h1 class="animEntete" >Rainbow Six Siege</h1>
@@ -67,13 +68,13 @@
             </div>
     </nav>
     <main>
+        
         <section class="global">
        
             <h1 class="animBreathe">Bouton Sass avec Mixin</h1>
             <p>Utilisez SASS pour détecter vos couleurs d'arrière-plan et d'autres styles et appliquez-les à vos boutons pour une
             cohérence globale survole et états actifs.</p>
-            <div id="Fdepart">Bonjour, Bienvenue sur un site de quiz ou vous aurez 5 questions autour du monde du Hockey à répondre       <p font-size="10px">cliquez pour enlever</p></div>
-
+           
             <div class="grid-container">
                     <div class="grid-item"><h1>Attaquant</h1></div>
                     
@@ -315,19 +316,20 @@
             </ul>
         </section>
     </footer>
-</body>
-<script>
-    window.addEventListener('load', function () {
-        let elmChkMenu = document.querySelector('#checkMenu')
-        let elmBtnMenu = document.querySelector('#btnMenu')
-
-        window.addEventListener('resize', function () {
-            // console.log(window.innerWidth)
-            if (window.innerWidth >= 500) {
-                elmChkMenu.checked = false
-            }
-        })
-    })
+    <script>
+        window.addEventListener('load', function () {
+            let elmChkMenu = document.querySelector('#checkMenu')
+            let elmBtnMenu = document.querySelector('#btnMenu')
     
-</script>
+            window.addEventListener('resize', function () {
+                // console.log(window.innerWidth)
+                if (window.innerWidth >= 500) {
+                    elmChkMenu.checked = false
+                }
+            })
+        })
+        
+    </script>
+</body>
+
 </html>
