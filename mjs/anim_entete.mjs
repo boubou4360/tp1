@@ -10,14 +10,23 @@ export class anim_entete {
     anim(){
         console.log('animation/////')
         console.log(this.elmEntete.children[0])
+
+
         let elmTitre = this.elmEntete.children[0]
         elmTitre.classList.add('animEntete')
 
 
-        //sec
-        let elmImg = this.elmSec.children[0]
-        elmImg.classList.add('animSec')
+        
     }
+    
+    animSec(){
+        console.log('animationSEC')
+        //sec
+        console.log(this.elmSec.children[2])
+
+        let elmImg = this.elmSec.children[2]
+        elmImg.classList.add('animSec')
+    
 }
 
 

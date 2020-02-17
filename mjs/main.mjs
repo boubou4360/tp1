@@ -8,8 +8,8 @@ animEntete.anim();
 
 //new anim
 // import{anim_sec} from "./anim_entete.mjs";
-let elmSec = document.querySelector('nav')
-const animSec = new anim_entete(elmSec)
-animSec.anim()
+let elmSec = document.querySelector('body');
+const animSec = new anim_entete(elmSec);
+animSec.animSec()
 
 

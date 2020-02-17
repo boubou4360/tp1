@@ -17,6 +17,25 @@
         height:100vh;
 }
 
+@keyframes animSec{
+    from{
+       transform :translateX(1000px);
+        
+    }
+    to{
+       
+        transform :translateX(0px);     
+    }
+}
+#menu {
+    animation: animSec 10s forwards;
+    
+  
+        
+}
+
+
+
 // .imgLogo{
 //     height: 50%;
 //     width:50%
