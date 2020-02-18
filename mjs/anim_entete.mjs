@@ -1,34 +1,38 @@
 export class anim_entete {
-    constructor(elmEntete, elmSec){
-        this.elmEntete = elmEntete
+    constructor(elmEntete, classAnimation){
 
+       
+        this.elmEntete = elmEntete
+     
         //sec
-        this.elmSec = elmSec
+        this.classAnimation = classAnimation
+       
         
     }
 
     anim(){
-        console.log('animation/////')
-        console.log(this.elmEntete.children[0])
+       
+        console.log(this.elmEntete)
 
-
-        let elmTitre = this.elmEntete.children[0]
-        elmTitre.classList.add('animEntete')
-
+        let elmTitre = this.elmEntete
+        
+        this.elmEntete.classList.add(this.classAnimation)
+        console.log(this.classAnimation)
+        
 
         
     }
     
-    animSec(){
-        console.log('animationSEC')
-        //sec
-        console.log(this.elmSec.children[2])
+//     animSec(){
+//         console.log('animationSEC')
+//         //sec
+//         console.log(this.elmSec.children[2])
 
-        let elmImg = this.elmSec.children[2]
-        elmImg.classList.add('animSec')
+//         let elmImg = this.elmSec
+//         elmImg.classList.add('animSec')
     
+// }
 }
-
 
 // export class anim_sec {
 //     constructor(elmSec){
